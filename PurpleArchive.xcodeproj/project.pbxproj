@@ -25,6 +25,7 @@
 		55200C9A27FC915000EA175C /* PurpleArchive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PurpleArchive.entitlements; sourceTree = "<group>"; };
 		55ADF81C2811247E00CFA19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		55ADF81D2811670900CFA19B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		55ADF81F2811678500CFA19B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		55F9C19A280050900071B52D /* OS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +44,7 @@
 		55200C8527FC914E00EA175C = {
 			isa = PBXGroup;
 			children = (
+				55ADF81F2811678500CFA19B /* README.md */,
 				55ADF81D2811670900CFA19B /* LICENSE */,
 				55200C9027FC914E00EA175C /* PurpleArchive */,
 				55200C8F27FC914E00EA175C /* Products */,
