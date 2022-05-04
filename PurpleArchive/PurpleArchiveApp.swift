@@ -15,7 +15,7 @@ struct PurpleArchiveApp: App {
             ContentView()
                 .onOpenURL { url in
                     if url.scheme == "com.googleusercontent.apps.866063282978-1n2v3nnk5nfvvm4uhtai22f6nnsokl9p" {
-                        Drive.shared.handleURL(url)
+                        DriveAPI.shared.handleURL(url)
                     }
                 }
         }

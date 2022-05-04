@@ -1,5 +1,5 @@
 //
-//  Drive.swift
+//  DriveAPI.swift
 //  DriveAPI
 //
 //  Created by Helloyunho on 2022/04/22.
@@ -8,11 +8,11 @@
 import Foundation
 import OAuth2
 
-public class Drive {
+public class DriveAPI {
     let oauth2: OAuth2CodeGrant
     let loader: OAuth2DataLoader
     
-    static public var shared = Drive()
+    static public var shared = DriveAPI()
     
     public convenience init() {
         self.init(oauth2: OAuth2CodeGrant(settings: [
@@ -28,6 +28,7 @@ public class Drive {
         self.oauth2 = oauth2
         self.loader = OAuth2DataLoader(oauth2: oauth2)
         self.loader.alsoIntercept403 = true
+        self.oauth2.logger = OAuth2DebugLogger(.trace)
     }
 
     public func structURL(path: String, querys: [URLQueryItem] = []) -> URL {
@@ -63,5 +64,25 @@ public class Drive {
     
     public func handleURL(_ url: URL) {
         self.oauth2.handleRedirectURL(url)
+    }
+    
+    public func getDrives() async throws -> DrivesPayload {
+        let url = DriveAPI.shared.structURL(path: "/drives")
+        let result = try await DriveAPI.shared.send(url: url, decoder: DrivesPayload.self)!
+        return result
+    }
+    
+    public func getFiles(_ driveID: String, parent: String? = nil) async throws -> Files {
+        let url = DriveAPI.shared.structURL(path: "/files", querys: [
+            URLQueryItem(name: "corpora", value: "drive"),
+            URLQueryItem(name: "driveId", value: driveID),
+            URLQueryItem(name: "includeItemsFromAllDrives", value: "true"),
+            URLQueryItem(name: "orderBy", value: "folder,name"),
+            URLQueryItem(name: "supportsAllDrives", value: "true"),
+            URLQueryItem(name: "fields", value: "files(parents, id, name, mimeType)"),
+            URLQueryItem(name: "q", value: "'\(parent ?? driveID)' in  parents")
+        ])
+        let result = try await DriveAPI.shared.send(url: url, decoder: Files.self)!
+        return result
     }
 }

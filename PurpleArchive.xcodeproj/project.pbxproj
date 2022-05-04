@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550FF0BE2822CA70003E850D /* Drives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF0BD2822CA70003E850D /* Drives.swift */; };
+		550FF0C02822CB58003E850D /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF0BF2822CB58003E850D /* Files.swift */; };
 		55200C9227FC914E00EA175C /* PurpleArchiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55200C9127FC914E00EA175C /* PurpleArchiveApp.swift */; };
 		55200C9427FC914E00EA175C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55200C9327FC914E00EA175C /* ContentView.swift */; };
 		55200C9627FC915000EA175C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55200C9527FC915000EA175C /* Assets.xcassets */; };
 		55200C9927FC915000EA175C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55200C9827FC915000EA175C /* Preview Assets.xcassets */; };
 		55ADF81E2811670900CFA19B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 55ADF81D2811670900CFA19B /* LICENSE */; };
 		55ADF8212811A05400CFA19B /* SelectDriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADF8202811A05400CFA19B /* SelectDriveView.swift */; };
-		55ADF833281247FB00CFA19B /* Drive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADF832281247FB00CFA19B /* Drive.swift */; };
+		55ADF833281247FB00CFA19B /* DriveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADF832281247FB00CFA19B /* DriveAPI.swift */; };
 		55ADF8382812481E00CFA19B /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 55ADF8372812481E00CFA19B /* OAuth2 */; };
 		55C08A0928155C3000347723 /* libDriveAPI.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ADF8272812265600CFA19B /* libDriveAPI.dylib */; };
 		55C08A0A28155C3000347723 /* libDriveAPI.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55ADF8272812265600CFA19B /* libDriveAPI.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -45,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		550FF0BD2822CA70003E850D /* Drives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drives.swift; sourceTree = "<group>"; };
+		550FF0BF2822CB58003E850D /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 		55200C8E27FC914E00EA175C /* PurpleArchive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleArchive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55200C9127FC914E00EA175C /* PurpleArchiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleArchiveApp.swift; sourceTree = "<group>"; };
 		55200C9327FC914E00EA175C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +60,7 @@
 		55ADF81F2811678500CFA19B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		55ADF8202811A05400CFA19B /* SelectDriveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDriveView.swift; sourceTree = "<group>"; };
 		55ADF8272812265600CFA19B /* libDriveAPI.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDriveAPI.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		55ADF832281247FB00CFA19B /* Drive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drive.swift; sourceTree = "<group>"; };
+		55ADF832281247FB00CFA19B /* DriveAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveAPI.swift; sourceTree = "<group>"; };
 		55F9C19A280050900071B52D /* OS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +156,8 @@
 		55ADF830281226AD00CFA19B /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				550FF0BD2822CA70003E850D /* Drives.swift */,
+				550FF0BF2822CB58003E850D /* Files.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -159,7 +165,7 @@
 		55ADF8312812277F00CFA19B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				55ADF832281247FB00CFA19B /* Drive.swift */,
+				55ADF832281247FB00CFA19B /* DriveAPI.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -303,7 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55ADF833281247FB00CFA19B /* Drive.swift in Sources */,
+				550FF0BE2822CA70003E850D /* Drives.swift in Sources */,
+				55ADF833281247FB00CFA19B /* DriveAPI.swift in Sources */,
+				550FF0C02822CB58003E850D /* Files.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
