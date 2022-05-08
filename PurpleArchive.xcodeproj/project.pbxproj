@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		550FF0BE2822CA70003E850D /* Drives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF0BD2822CA70003E850D /* Drives.swift */; };
 		550FF0C02822CB58003E850D /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF0BF2822CB58003E850D /* Files.swift */; };
+		550FF0C2282361B4003E850D /* DriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF0C1282361B4003E850D /* DriveView.swift */; };
 		55200C9227FC914E00EA175C /* PurpleArchiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55200C9127FC914E00EA175C /* PurpleArchiveApp.swift */; };
 		55200C9427FC914E00EA175C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55200C9327FC914E00EA175C /* ContentView.swift */; };
 		55200C9627FC915000EA175C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55200C9527FC915000EA175C /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		550FF0BD2822CA70003E850D /* Drives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drives.swift; sourceTree = "<group>"; };
 		550FF0BF2822CB58003E850D /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		550FF0C1282361B4003E850D /* DriveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveView.swift; sourceTree = "<group>"; };
 		55200C8E27FC914E00EA175C /* PurpleArchive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleArchive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55200C9127FC914E00EA175C /* PurpleArchiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleArchiveApp.swift; sourceTree = "<group>"; };
 		55200C9327FC914E00EA175C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		55ADF8222811A09100CFA19B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				550FF0C1282361B4003E850D /* DriveView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550FF0C2282361B4003E850D /* DriveView.swift in Sources */,
 				55200C9427FC914E00EA175C /* ContentView.swift in Sources */,
 				55ADF8212811A05400CFA19B /* SelectDriveView.swift in Sources */,
 				55200C9227FC914E00EA175C /* PurpleArchiveApp.swift in Sources */,

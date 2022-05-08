@@ -7,11 +7,11 @@
 
 import Foundation
 
-public struct Drives: Codable {
+public struct Drive: Codable, Identifiable, Equatable {
     public let id: String
     public let name: String
 }
 
-public struct DrivesPayload: Codable {
-    public let drives: Drives
+public struct Drives: Codable {
+    public let drives: [Drive]
 }

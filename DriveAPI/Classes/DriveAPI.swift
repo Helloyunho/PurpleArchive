@@ -66,9 +66,9 @@ public class DriveAPI {
         self.oauth2.handleRedirectURL(url)
     }
     
-    public func getDrives() async throws -> DrivesPayload {
+    public func getDrives() async throws -> Drives {
         let url = DriveAPI.shared.structURL(path: "/drives")
-        let result = try await DriveAPI.shared.send(url: url, decoder: DrivesPayload.self)!
+        let result = try await DriveAPI.shared.send(url: url, decoder: Drives.self)!
         return result
     }
     
