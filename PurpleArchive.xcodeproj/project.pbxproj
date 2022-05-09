@@ -14,6 +14,7 @@
 		55200C9427FC914E00EA175C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55200C9327FC914E00EA175C /* ContentView.swift */; };
 		55200C9627FC915000EA175C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55200C9527FC915000EA175C /* Assets.xcassets */; };
 		55200C9927FC915000EA175C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55200C9827FC915000EA175C /* Preview Assets.xcassets */; };
+		5530CA51282940F6004409E4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5530CA50282940F6004409E4 /* MainView.swift */; };
 		55ADF81E2811670900CFA19B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 55ADF81D2811670900CFA19B /* LICENSE */; };
 		55ADF8212811A05400CFA19B /* SelectDriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADF8202811A05400CFA19B /* SelectDriveView.swift */; };
 		55ADF833281247FB00CFA19B /* DriveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADF832281247FB00CFA19B /* DriveAPI.swift */; };
@@ -57,6 +58,7 @@
 		55200C9527FC915000EA175C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55200C9827FC915000EA175C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55200C9A27FC915000EA175C /* PurpleArchive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PurpleArchive.entitlements; sourceTree = "<group>"; };
+		5530CA50282940F6004409E4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		55ADF81C2811247E00CFA19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		55ADF81D2811670900CFA19B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		55ADF81F2811678500CFA19B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				55ADF8202811A05400CFA19B /* SelectDriveView.swift */,
+				5530CA50282940F6004409E4 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				550FF0C2282361B4003E850D /* DriveView.swift in Sources */,
+				5530CA51282940F6004409E4 /* MainView.swift in Sources */,
 				55200C9427FC914E00EA175C /* ContentView.swift in Sources */,
 				55ADF8212811A05400CFA19B /* SelectDriveView.swift in Sources */,
 				55200C9227FC914E00EA175C /* PurpleArchiveApp.swift in Sources */,
