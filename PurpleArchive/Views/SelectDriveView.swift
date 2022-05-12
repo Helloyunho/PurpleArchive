@@ -36,6 +36,7 @@ struct SelectDriveView: View {
                     LazyHStack {
                         ForEach(drives) { drive in
                             DriveView(driveName: drive.name, selected: self.selectedDrive == drive)
+                                .contentShape(Rectangle())
                                 .onTapGesture {
                                     self.selectedDrive = drive
                                 }
