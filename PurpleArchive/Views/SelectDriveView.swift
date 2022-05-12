@@ -27,7 +27,11 @@ struct SelectDriveView: View {
                     }
             } else {
                 Text("Select Drive")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .padding()
                 Text("Please select a drive to archive OS.")
+                    .font(.body)
                 ScrollView(.horizontal) {
                     LazyHStack {
                         ForEach(drives) { drive in
@@ -56,5 +60,6 @@ struct SelectDriveView: View {
 struct SelectDriveView_Previews: PreviewProvider {
     static var previews: some View {
         SelectDriveView()
+            .previewLayout(.fixed(width: 800, height: 600))
     }
 }

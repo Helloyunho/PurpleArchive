@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
-import DriveAPI
 
 struct ContentView: View {
     var body: some View {
-        SelectDriveView()
+        Group {
+            SelectDriveView()
+        }
+            .frame(idealWidth: 800, maxWidth: .infinity, idealHeight: 600, maxHeight: .infinity)
     }
 }
 

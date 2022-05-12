@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DriveAPI
 
 struct MainView: View {
     @State var loading = true
@@ -28,7 +29,6 @@ struct MainView: View {
                 }
             }
         }
-        .frame(idealWidth: 800, maxWidth: .infinity, idealHeight: 600, maxHeight: .infinity)
         .task {
             do {
                 let result = try await DriveAPI.shared.getFiles("0AJEGHI5tLScTUk9PVA")
