@@ -43,6 +43,9 @@ struct SelectDriveView: View {
                         }
                     }
                 }
+                Button("Next") {
+                    
+                }
             }
         }
         .task {
