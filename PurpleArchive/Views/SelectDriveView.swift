@@ -32,20 +32,24 @@ struct SelectDriveView: View {
                     .padding()
                 Text("Please select a drive to archive OS.")
                     .font(.body)
-                ScrollView(.horizontal) {
-                    LazyHStack {
-                        ForEach(drives) { drive in
-                            DriveView(driveName: drive.name, selected: self.selectedDrive == drive)
-                                .contentShape(Rectangle())
-                                .onTapGesture {
-                                    self.selectedDrive = drive
-                                }
+                GeometryReader { geometry in
+                    ScrollView(.horizontal) {
+                        LazyHStack {
+                            ForEach(drives) { drive in
+                                DriveView(driveName: drive.name, selected: self.selectedDrive == drive)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture {
+                                        self.selectedDrive = drive
+                                    }
+                            }
                         }
+                        .frame(minWidth: geometry.size.width)
                     }
                 }
                 Button("Next") {
                     
                 }
+                .padding()
             }
         }
         .task {
