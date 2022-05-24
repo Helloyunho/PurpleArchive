@@ -10,6 +10,7 @@
 		550FF0BE2822CA70003E850D /* Drives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF0BD2822CA70003E850D /* Drives.swift */; };
 		550FF0C02822CB58003E850D /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF0BF2822CB58003E850D /* Files.swift */; };
 		550FF0C2282361B4003E850D /* DriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF0C1282361B4003E850D /* DriveView.swift */; };
+		5518E61A283D0F140071BC9D /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 5518E619283D0F140071BC9D /* Defaults */; };
 		55200C9227FC914E00EA175C /* PurpleArchiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55200C9127FC914E00EA175C /* PurpleArchiveApp.swift */; };
 		55200C9427FC914E00EA175C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55200C9327FC914E00EA175C /* ContentView.swift */; };
 		55200C9627FC915000EA175C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55200C9527FC915000EA175C /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5518E61A283D0F140071BC9D /* Defaults in Frameworks */,
 				55C08A0928155C3000347723 /* libDriveAPI.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +223,7 @@
 			);
 			name = PurpleArchive;
 			packageProductDependencies = (
+				5518E619283D0F140071BC9D /* Defaults */,
 			);
 			productName = PurpleArchive;
 			productReference = 55200C8E27FC914E00EA175C /* PurpleArchive.app */;
@@ -276,6 +279,7 @@
 			mainGroup = 55200C8527FC914E00EA175C;
 			packageReferences = (
 				55ADF819281123EB00CFA19B /* XCRemoteSwiftPackageReference "OAuth2" */,
+				5518E618283D0F140071BC9D /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = 55200C8F27FC914E00EA175C /* Products */;
 			projectDirPath = "";
@@ -605,6 +609,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5518E618283D0F140071BC9D /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
 		55ADF819281123EB00CFA19B /* XCRemoteSwiftPackageReference "OAuth2" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/p2/OAuth2";
@@ -616,6 +628,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5518E619283D0F140071BC9D /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5518E618283D0F140071BC9D /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
 		55ADF8372812481E00CFA19B /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 55ADF819281123EB00CFA19B /* XCRemoteSwiftPackageReference "OAuth2" */;
